@@ -24,7 +24,7 @@ if [ "$count" -eq 1 ]; then
    uci set network.lan.proto='dhcp'
 elif [ "$count" -gt 1 ]; then
    # 多网口设备
-   uci set network.lan.ipaddr='192.168.8.1'
+   uci set network.lan.ipaddr='192.168.6.1'
    # 判断是否启用 PPPoE
    if [[ "$ENABLE_PPPOE" == "yes" ]]; then
       echo "PPPoE is enabled."
